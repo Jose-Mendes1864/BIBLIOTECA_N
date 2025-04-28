@@ -33,7 +33,8 @@ class CidadesView(View):
 class AutoresView(View):
     def get(self, request, *args, **kwargs):
         autores = Autor.objects.all()
-        return render(request, 'autor.html', {'autores': autores})
+        return render(request,
+                       'autor.html', {'autores': autores})
 
 class EditorasView(View):
     def get(self, request, *args, **kwargs):

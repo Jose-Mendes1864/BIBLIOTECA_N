@@ -67,7 +67,8 @@
 
 
                 
-       
+                    <td><a href="{% url 'delete' autor.id %}" class="btn btn-danger">Excluir</a></td>
+                    <td><a href="{% url 'editar' livros.id %}" class="btn btn-warning">Editar</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
